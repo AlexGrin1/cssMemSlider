@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  background-color: rgba(38, 39, 38, 0.658);
+}
+main {
+  max-width: 1440px;
+  max-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  list-style-type: none;
+}
+.slider-block {
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 50px;
+  height: 900px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 0 50px white;
+  position: relative;
+}
+.hidden {
+  transition: opacity 1s transform 0.5s;
+  transform: translateX(-2000px);
+  opacity: 0;
+}
+.image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 2000px;
+}
+.active-slide {
+  position: absolute;
+  top: 0;
+  transform: translateX(-2000px);
+  transition: 1s;
+}
+
+.slider-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+}
+.slider-control_description {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 200;
+}
+.slider-controll_panel {
+  display: flex;
+}
+.slider-controll_button {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(238, 238, 238, 0.26);
+  border-radius: 50%;
+  margin: 10px;
+  background-color: rgb(42, 113, 179);
+}
+.slider-controll_button:hover {
+  background-color: wheat;
+  cursor: pointer;
+  transition: 0.5s;
+
+  border-color: rgb(226, 226, 226);
+}
+.active {
+  background-color: rgb(61, 61, 61);
+  border-color: rgb(42, 113, 179);
+}
+.active:hover {
+  transition: 0.5s;
+  background-color: rgb(61, 61, 61);
+  border-color: white;
+}
