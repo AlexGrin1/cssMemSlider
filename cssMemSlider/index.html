@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Slider</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="slider-block">
+            <img class="image active-slide" data-value="1" src="./cssMemSlider/assets/mem1.jpg" alt="">
+            <img class="image hidden" data-value="2" src="./cssMemSlider/assets/mem2.jpg" alt="">
+            <img class="image active-slide" data-value="3" src="./cssMemSlider/assets/mem1.jpg" alt="">
+            <img class="image hidden" data-value="4" src="./cssMemSlider/assets/mem2.jpg" alt="">
+
+
+        </section>
+        <section class="slider-control">
+            <div class="slider-control_description">
+                <div>Confused</div>
+            </div>
+            <ul class="slider-controll_panel">
+                <li class="slider-controll_button active" data-number="1"></li>
+                <li class="slider-controll_button" data-number="2"></li>
+                <li class="slider-controll_button" data-number="3"></li>
+                <li class="slider-controll_button" data-number="4"></li>
+            </ul>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
